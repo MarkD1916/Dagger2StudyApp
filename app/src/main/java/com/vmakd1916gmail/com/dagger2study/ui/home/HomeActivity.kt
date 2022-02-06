@@ -15,7 +15,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 const val TAG = "HomeActivity"
-class HomeActivity : DaggerAppCompatActivity() {
+class HomeActivity : AppCompatActivity(){
 
     lateinit var navController: NavController
     private var _binding: ActivityHomeBinding? = null

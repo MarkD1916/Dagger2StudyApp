@@ -2,18 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/auth_navigation_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/authFragment">
 
     <activity
-        android:id="@+id/homeActivity"
-        android:name="com.vmakd1916gmail.com.dagger2study.ui.home.HomeActivity"
-        android:label="HomeActivity" />
-    <activity
-        android:id="@+id/authActivity"
+        android:id="@+id/authActivity2"
         android:name="com.vmakd1916gmail.com.dagger2study.ui.auth.AuthActivity"
         android:label="AuthActivity" />
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.vmakd1916gmail.com.login_logout_register.ui.auth.fragments.HomeFragment"
-        android:label="HomeFragment" />
+        android:id="@+id/authFragment"
+        android:name="com.vmakd1916gmail.com.dagger2study.ui.auth.fragments.AuthFragment"
+        android:label="AuthFragment" />
 </navigation>

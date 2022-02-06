@@ -1,19 +1,15 @@
-package com.vmakd1916gmail.com.login_logout_register.ui.auth.fragments
+package com.vmakd1916gmail.com.dagger2study.ui.auth.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.vmakd1916gmail.com.dagger2study.R
-import com.vmakd1916gmail.com.dagger2study.databinding.FragmentHomeBinding
+import com.vmakd1916gmail.com.dagger2study.databinding.FragmentAuthBinding
 import dagger.android.support.DaggerFragment
 
-
-private const val TAG = "LoginFragment"
-
-class HomeFragment : Fragment(), View.OnClickListener {
-    private var _binding: FragmentHomeBinding? = null
+class AuthFragment: DaggerFragment(R.layout.fragment_auth) {
+    private var _binding: FragmentAuthBinding? = null
     val mBinding get() = _binding!!
 
     override fun onCreateView(
@@ -21,7 +17,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentAuthBinding.inflate(layoutInflater, container, false)
 
         return mBinding.root
     }
@@ -30,11 +26,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
     }
-
-    override fun onClick(v: View) {
-
-    }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

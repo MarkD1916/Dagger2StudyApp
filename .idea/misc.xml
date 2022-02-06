@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/drawable-v24/circle_shape.xml" value="0.2945" />
+        <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/font/font.xml" value="0.396875" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/activity_auth.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/activity_home.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/fragment_auth.xml" value="0.1" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/fragment_detaile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/layout/fragment_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/vmakd/AndroidStudioProjects/Dagger2Study/app/src/main/res/xml/xml.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

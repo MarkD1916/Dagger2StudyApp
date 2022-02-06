@@ -6,6 +6,7 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
+import dev.ronnie.imageloaderdagger2.di.modules.AuthActivityModule
 import javax.inject.Singleton
 
 @Singleton
@@ -13,7 +14,8 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         AppModule::class,
-        NetworkModule::class
+        NetworkModule::class,
+        AuthActivityModule::class
     ]
 )
 interface AppComponent : AndroidInjector<BaseApplication> {
