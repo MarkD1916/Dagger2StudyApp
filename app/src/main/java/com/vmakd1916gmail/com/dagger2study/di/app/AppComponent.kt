@@ -2,23 +2,20 @@ package com.vmakd1916gmail.com.dagger2study.di.app
 
 import android.app.Application
 import com.vmakd1916gmail.com.dagger2study.BaseApplication
+import com.vmakd1916gmail.com.dagger2study.di.SubComponentsModule
+import com.vmakd1916gmail.com.dagger2study.di.auth.AuthComponent
 import dagger.BindsInstance
 import dagger.Component
-import dagger.android.AndroidInjectionModule
-import dagger.android.AndroidInjector
-import dev.ronnie.imageloaderdagger2.di.modules.AuthActivityModule
 import javax.inject.Singleton
 
 @Singleton
 @Component(
     modules = [
-        AndroidInjectionModule::class,
         AppModule::class,
-        NetworkModule::class,
-        AuthActivityModule::class
+        SubComponentsModule::class
     ]
 )
-interface AppComponent : AndroidInjector<BaseApplication> {
+interface AppComponent {
 
     @Component.Builder
     interface Builder {
@@ -28,6 +25,7 @@ interface AppComponent : AndroidInjector<BaseApplication> {
         fun build(): AppComponent
     }
 
-    override fun inject(app: BaseApplication)
+    fun inject(app: BaseApplication)
 
+    fun authComponent(): AuthComponent.Factory
 }

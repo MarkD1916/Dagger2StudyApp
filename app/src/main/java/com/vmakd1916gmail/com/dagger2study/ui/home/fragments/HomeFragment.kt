@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vmakd1916gmail.com.dagger2study.R
 import com.vmakd1916gmail.com.dagger2study.databinding.FragmentHomeBinding
-import dagger.android.support.DaggerFragment
 
 
 private const val TAG = "LoginFragment"

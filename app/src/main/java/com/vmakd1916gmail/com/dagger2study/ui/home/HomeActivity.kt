@@ -9,7 +9,6 @@ import androidx.navigation.Navigation
 import com.vmakd1916gmail.com.dagger2study.R
 import com.vmakd1916gmail.com.dagger2study.databinding.ActivityHomeBinding
 import com.vmakd1916gmail.com.dagger2study.other.AuthRetrofitImpl
-import dagger.android.support.DaggerAppCompatActivity
 import retrofit2.Retrofit
 import javax.inject.Inject
 import javax.inject.Named
