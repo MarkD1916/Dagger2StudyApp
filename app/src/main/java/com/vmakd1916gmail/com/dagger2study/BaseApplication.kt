@@ -1,8 +1,5 @@
 package com.vmakd1916gmail.com.dagger2study
 
-
-
-
 import com.vmakd1916gmail.com.dagger2study.di.app.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
