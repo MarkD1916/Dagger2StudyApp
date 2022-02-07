@@ -17,6 +17,10 @@ import javax.inject.Inject
 class AuthViewModel @Inject constructor(private val repository: AuthRepositoryImpl) :
     ViewModel() {
 
+
+    private val _testStatus = MutableLiveData<String>("Hello Dagger")
+    val testStatus:LiveData<String> = _testStatus
+//
 //    private val _registerStatus = MutableLiveData<Event<Resource<UserRequest>>>()
 //    val registerStatus:LiveData<Event<Resource<UserRequest>>> = _registerStatus
 //

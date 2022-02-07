@@ -9,7 +9,7 @@ import javax.inject.Singleton
 
 @Module(
     includes = [
-        NetworkModule::class
+        NetworkModule::class,
     ]
 )
 class AppModule{

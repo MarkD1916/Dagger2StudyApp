@@ -2,7 +2,6 @@ package com.vmakd1916gmail.com.dagger2study.di.app
 
 import com.vmakd1916gmail.com.dagger2study.AUTH_BASE_URL
 import com.vmakd1916gmail.com.dagger2study.data.remote.auth.interceptors.AuthTokenInterceptor
-import com.vmakd1916gmail.com.dagger2study.di.auth.AuthApiModule
 import com.vmakd1916gmail.com.dagger2study.di.auth.AuthScope
 import com.vmakd1916gmail.com.dagger2study.other.AuthRetrofitImpl
 import com.vmakd1916gmail.com.dagger2study.other.TokenPreferences

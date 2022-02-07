@@ -1,7 +1,6 @@
 package com.vmakd1916gmail.com.dagger2study.di.app
 
 import android.app.Application
-import com.vmakd1916gmail.com.dagger2study.BaseApplication
 import com.vmakd1916gmail.com.dagger2study.di.SubComponentsModule
 import com.vmakd1916gmail.com.dagger2study.di.auth.AuthComponent
 import dagger.BindsInstance
@@ -17,15 +16,14 @@ import javax.inject.Singleton
 )
 interface AppComponent {
 
-    @Component.Builder
-    interface Builder {
-        @BindsInstance
-        fun application(application: Application): Builder
-
-        fun build(): AppComponent
+    @Component.Factory
+    interface Factory {
+        fun create(
+            @BindsInstance application: Application,
+        ): AppComponent
     }
 
-    fun inject(app: BaseApplication)
-
     fun authComponent(): AuthComponent.Factory
+
 }
+
