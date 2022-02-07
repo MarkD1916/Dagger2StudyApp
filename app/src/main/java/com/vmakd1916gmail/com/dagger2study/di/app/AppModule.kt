@@ -1,7 +1,9 @@
 package com.vmakd1916gmail.com.dagger2study.di.app
 
 import android.app.Application
+import androidx.lifecycle.ViewModelProvider
 import com.vmakd1916gmail.com.dagger2study.other.TokenPreferences
+import com.vmakd1916gmail.com.dagger2study.ui.auth.viewmodels.AuthViewModel
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -19,11 +21,9 @@ class AppModule{
     @Provides
     fun provideTokenPreferences(context: Application) =
         TokenPreferences(context)
-//
-//    @Provides
-//    @Singleton
-//    fun provideAuthInterceptor(authTokenPreferences: TokenPreferences): AuthTokenInterceptor =
-//        AuthTokenInterceptor(authTokenPreferences)
+
+
+
 
 
 

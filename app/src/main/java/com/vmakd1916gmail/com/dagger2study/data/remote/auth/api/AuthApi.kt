@@ -4,12 +4,11 @@ import com.vmakd1916gmail.com.dagger2study.data.remote.auth.request.UserRequest
 import com.vmakd1916gmail.com.dagger2study.data.remote.auth.response.SimpleResponse
 import com.vmakd1916gmail.com.dagger2study.data.remote.auth.response.TokenResponse
 import com.vmakd1916gmail.com.dagger2study.data.remote.auth.response.UserResponse
-import com.vmakd1916gmail.com.dagger2study.di.auth.AuthScope
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.POST
 
-@AuthScope
+
 interface AuthApi {
     @POST("auth/users/")
     suspend fun registerUser(@Body user: UserRequest): Response<UserResponse>

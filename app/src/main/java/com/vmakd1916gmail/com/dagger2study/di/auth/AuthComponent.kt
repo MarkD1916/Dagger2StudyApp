@@ -1,12 +1,11 @@
 package com.vmakd1916gmail.com.dagger2study.di.auth
 
-import com.vmakd1916gmail.com.dagger2study.di.app.AppComponent
-import com.vmakd1916gmail.com.dagger2study.ui.auth.viewmodels.AuthViewModel
+import com.vmakd1916gmail.com.dagger2study.ui.auth.fragments.AuthFragment
 import dagger.Subcomponent
 
-@AuthScope
+
 @Subcomponent(
-    modules = [
+    modules = [AuthModule::class,
     ]
 )
 interface AuthComponent {
@@ -16,6 +15,5 @@ interface AuthComponent {
         fun create(): AuthComponent
     }
 
-    fun getAuthViewModel(): AuthViewModel
-
+    fun inject(fragment: AuthFragment)
 }
